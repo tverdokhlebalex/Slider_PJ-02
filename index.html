@@ -11,12 +11,13 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:regular"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Slider Project</title>
   </head>
   <body>
-    <main class="main">
-      <div class="projects">
-        <ul class="menu-projects">
+    <main class="projects">
+      <div class="wrapper">
+        <ul class="menu-projects title">
           <li class="menu-projects__item">
             <a class="menu-projects__link">Rostov-on-Don, Admiral</a>
           </li>
@@ -28,34 +29,59 @@
           </li>
         </ul>
         <div class="project-content">
-          <h1 class="projects-title">Completed<br />projects</h1>
-          <p class="projects-subtitel">
-            Only a small part of the work performed by our company is presented
-            <br />
-            on the site. For 14 years on in the construction <br />
-            market we have made happy more than 1000 families
-          </p>
+          <div class="project-content__text">
+            <h1 class="projects-title title brass-text">
+              Completed<br />projects --------
+            </h1>
+            <p class="projects-subtitel">
+              Only a small part of the work performed by our company is
+              presented
+              <br />
+              on the site. For 14 years on in the construction <br />
+              market we have made happy more than 1000 families
+            </p>
+            <div class="description project-description">
+              <div class="description-item">
+                <h2 class="description-item-title title brass-text">City:</h2>
+                <span class="city-name"></span>
+              </div>
+              <div class="description-item">
+                <h2 class="description-item-title title brass-text">
+                  apartment area:
+                </h2>
+                <span class="area"></span>
+              </div>
+              <div class="description-item">
+                <h2 class="description-item-title title brass-text">
+                  Repair time:
+                </h2>
+                <span class="time"></span>
+              </div>
+              <div class="description-item">
+                <h2 class="description-item-title title brass-text">
+                  Repair Cost:
+                </h2>
+                <span class="cost"></span>
+              </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow slider-arrow-left">
+                <img src="./image/arrow-left.svg" alt="arrow-left" />
+              </div>
+              <div class="dots slider-dots">
+                <img class="dot dot-1" src="./image/dot.svg" alt="dot" />
+                <img class="dot dot-2" src="./image/dot.svg" alt="dot" />
+                <img class="dot dot-3" src="./image/dot.svg" alt="dot" />
+              </div>
+              <div class="arrow slider-arrow-right">
+                <img src="./image/arrow-right.svg" alt="arrow-right" />
+              </div>
+            </div>
+          </div>
+          <div class="slider-img"></div>
         </div>
-        <div class="discription pproject-discription">
-          <div class="dicription-item">
-            <h2 class="description-item-title">City:</h2>
-            <span class="city-name"></span>
-          </div>
-          <div class="dicription-item">
-            <h2 class="description-item-title">apartment area:</h2>
-            <span></span>
-          </div>
-          <div class="dicription-item">
-            <h2 class="description-item-title">Repair time:</h2>
-            <span></span>
-          </div>
-          <div class="dicription-item">
-            <h2 class="description-item-title">Repair Cost:</h2>
-            <span></span>
-          </div>
-        </div>
-        <div class="slider-img"></div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
