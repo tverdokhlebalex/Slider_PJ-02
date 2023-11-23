@@ -102,14 +102,6 @@ body {
     font-weight: 400;
     line-height: 25px;
 }
-.city-name {
-}
-.area {
-}
-.time {
-}
-.cost {
-}
 .arrows {
     display: flex;
     justify-content: space-between;
@@ -135,8 +127,6 @@ body {
     display: flex;
     align-items: center;
 }
-.slider-dots {
-}
 .dot { 
     margin-right: 15px;
     opacity: 0.3;
@@ -151,6 +141,7 @@ body {
 
 .slider-img {
     width: 679px;
+    background-image: url(./images/1-slide.jpg);
 }
 .brass-hypertext {
     border-bottom: 1px solid #E3B873;
