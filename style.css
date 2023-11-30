@@ -1,20 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
     font-family: 'Nunito sans', sans-serif;
     font-style: normal;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #131313;
     
     
 }
-.a {
-    cursor: pointer;
 
-}
 
 .projects {
     background-color: #131313;;
@@ -31,6 +29,7 @@ body {
     justify-content: flex-end;
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 45px;
     
 }
 
@@ -54,6 +53,7 @@ body {
     text-decoration: none;
     color: #FFFFFF4D;
     margin-right: 60.5px;
+    cursor: pointer;
 }
 
 .project-content {
@@ -89,10 +89,18 @@ body {
 .description {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 120px;
+
 }
 .description-item {
     width: 50%;
     margin-bottom: 34px;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%;
 }
 .description-item-title {
     color: #E3B873;
@@ -134,14 +142,22 @@ body {
 .dot:hover {
     opacity: 1 !important;
 }
-.dot-1 {
-    opacity: 1;
-}
 
 
-.slider-img {
+
+.slider-img .image {
+    background-size: cover;
+    background-position: center center;
     width: 679px;
-    background-image: url(./images/1-slide.jpg);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;  
+    transition: opacity 800ms ease;
+}
+.slider-img .image.active {
+    opacity: 1;
 }
 .brass-hypertext {
     border-bottom: 1px solid #E3B873;
