@@ -145,19 +145,10 @@ body {
 
 
 
-.slider-img .image {
+.slider-img {
     background-size: cover;
     background-position: center center;
     width: 679px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;  
-    transition: opacity 800ms ease;
-}
-.slider-img .image.active {
-    opacity: 1;
 }
 .brass-hypertext {
     border-bottom: 1px solid #E3B873;
